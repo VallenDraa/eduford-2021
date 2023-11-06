@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford Official Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <!-- Navigation Menu -->
+        <div class="ws-limit-1500px">
+            <nav class="flex justify-between items-center pt-5 md:px-20 px-8">
+                <a href="index.html"><img src="img/logo.png" alt="EDUFORD"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul class="text-white ">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul> 
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 class="font-medium text-4xl mt-24 md:mt-36 xl:mt-44">About Us</h1>
+        </div>
+    </section>
+    <!-- Content -->
+    <section class="bg-gradient-to-b from-white to-gray-100 ">
+        <div class="about-row content ws-limit-1500px">
+            <div class="text-left about-col">
+                <h2 class="text-4xl font-medium md:pos-center">We Are The World's Largest University</h2>
+                <p class="text-justify p-gray px-0 py-5 md:pos-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perferendis vitae necessitatibus labore magnam ex est, 
+                    optio ullam a eligendi nihil quidem ad aliquid in. Ex error 
+                    esse harum obcaecati minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Dolorum dolorem in praesentium quasi accusamus libero necessitatibus, 
+                    temporibus omnis odit pariatur excepturi dolore molestiae fuga neque quam rerum delectus 
+                    laboriosam saepe.</p>
+                    <a href="#" 
+                    class="border-red-500 cursor-pointer border-2 text-sm bg-transparent py-6 xl:py-4 
+                    px-10 hero-btn-hover duration-500 text-red-500 hover:text-white md:turn-to-block">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg" alt="" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-gray-100">
+        <div class="footer ws-limit-1500px">
+            <h3 class="font-semibold pt-12 pb-4 text-lg">About Us</h3>
+            <p class="about-us-p-padding pt-5 p-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sunt quaerat asperiores possimus?
+                 Et sunt iure iusto eaque sapiente explicabo ut ullam, neque voluptatem repellendus consequuntur, 
+            </p>
+            <div class="mt-10 text-red-500 text-xl flex justify-center">
+                <a href="" class="px-4 icon-hover"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="px-4 icon-hover"><i class="fab fa-instagram"></i></a>
+                <a href="" class="px-4 icon-hover"><i class="fab fa-twitter"></i></a>
+                <a href="" class="px-4 icon-hover"><i class="fab fa-linkedin-in"></i></a>    
+            </div>
+            <p class="p-gray my-3">Made With Love By VallenDra</p>
+        </div>
+    </section>
+    
+
+   
+    
+    <!-- Java script for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>

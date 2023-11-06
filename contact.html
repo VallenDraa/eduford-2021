@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford Official Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <!-- Navigation Menu -->
+        <div class="ws-limit-1500px">
+            <nav class="flex justify-between items-center pt-5 md:px-20 px-8">
+                <a href="index.html"><img src="img/logo.png" alt="EDUFORD"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul class="text-white">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul> 
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 class="font-medium text-4xl mt-24 md:mt-36 xl:mt-44">Contact Us</h1>
+        </div>
+        
+    </section>
+    <!--Location-->
+    <section class="bg-gradient-to-b from-white to-gray-100">
+        <div class="location ws-limit-1500px">
+            <h1 class="font-medium text-3xl mb-10">Location Of Our University</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55873.07380872203!2d76.62223464866243!3d10.047422393590724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e61dd797f78f%3A0x783ce0a49c4651b3!2sEduford%20Academy!5e0!3m2!1sen!2sid!4v1639130629021!5m2!1sen!2sid" 
+            class="inline-block w-full" id=""width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- Contact Address  -->
+    <section class="bg-gradient-to-b from-gray-100 to-gray-200">
+        <div class="flex mx-auto w-4/5 justify-between flex-col xl:flex-row ws-limit-1500px">
+            <div style="flex-basis:45%">
+                <a href="" >
+                    <div class="flex my-10 items-center duration-100 contact-hover">
+                        <i class="fas fa-university pr-10 text-3xl"></i>
+                        <h5 class="text-2xl">XYZ Road, ABC Building<span class="block p-gray p-0 text-md">India, Little London</span></h5>
+                    </div>  
+                </a>
+                <a href="">
+                        <div class="flex my-10 items-center duration-100 contact-hover">
+                            <div><i class="fas fa-phone-alt pr-10 text-3xl"></i></div>
+                            <h5 class="text-2xl">+62 081234567890<span class="block p-gray p-0 text-md">Monday To Saturday, 10AM to 6PM</span></h5>
+                        </div> 
+                </a>
+                <a href="">
+                     <div class="flex my-10 items-center duration-100 contact-hover">
+                        <div><i class="fas fa-envelope pr-10 text-3xl"></i></div>
+                        <h5 class="text-2xl">Eduford@admissions.com<span class="block p-gray p-0 text-md">Email Us Your Query</span></h5>
+                    </div> 
+                </a>
+            </div>
+            <div class="border-gray-300 border-2" style="flex-basis:50%">
+                <form class="px-10 pb-10 flex flex-col" action="form-handler.php" method="post">
+                    <h3 class="font-medium text-xl my-7" >Send Us a Message Now</h3> 
+                    <input name="name" class="my-3 bg-gray-200 px-2 py-2"type="text" placeholder="Enter Your Name">
+                    <input name="email" class="my-3 bg-gray-200 px-2 py-2" type="email" placeholder="Enter Email Address">
+                    <input name="subject" class="my-3 bg-gray-200 px-2 py-2" type="text" name="subject" placeholder="Enter Your Subject">
+                    <textarea name="message"class="my-3 bg-gray-200 px-2" rows="7" placeholder="Message"></textarea>
+                    <button class="cursor-pointer text-black hover:text-white border-2 
+                    text-sm bg-transparent py-6 xl:py-4  hero-btn-hover 
+                    duration-500 btn-to-block shadow-md">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="bg-gray-200">
+        <div class="footer ws-limit-1500px">
+            <h3 class="font-semibold pt-12 pb-4 text-lg">About Us</h3>
+            <p class="about-us-p-padding pt-5 p-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sunt quaerat asperiores possimus?
+                 Et sunt iure iusto eaque sapiente explicabo ut ullam, neque voluptatem repellendus consequuntur, 
+            </p>
+            <div class="mt-10 text-red-500 text-xl flex justify-center">
+                <a href="" class="px-4 icon-hover"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="px-4 icon-hover"><i class="fab fa-instagram"></i></a>
+                <a href="" class="px-4 icon-hover"><i class="fab fa-twitter"></i></a>
+                <a href="" class="px-4 icon-hover"><i class="fab fa-linkedin-in"></i></a>    
+            </div>
+            <p class="p-gray mt-3">Made With Love By VallenDra</p>
+        </div>
+    </section>
+    
+
+   
+    
+    <!-- Java script for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>
